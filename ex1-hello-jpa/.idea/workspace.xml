@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d25c2fa-fd61-4788-8d06-e980d7ce47b1" name="변경" comment="test push" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Yblo8Dq6EPHdqoQlRcutY0hFpo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;635b1191e174d8ae1eec16391157aecb&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hellojpa" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.JpaMain">
+    <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hellojpa.JpaMain" />
+      <module name="ex1-hello-jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hellojpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex1HelloJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ex1-hello-jpa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="jpabasic.ex1hellojpa.Ex1HelloJpaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.JpaMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="1d25c2fa-fd61-4788-8d06-e980d7ce47b1" name="변경" comment="" />
+      <created>1700802393287</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700802393287</updated>
+      <workItem from="1700802394465" duration="3953000" />
+      <workItem from="1701039421413" duration="5169000" />
+      <workItem from="1701085138061" duration="14000" />
+      <workItem from="1701216169444" duration="11867000" />
+      <workItem from="1701334655524" duration="527000" />
+      <workItem from="1702002434083" duration="8443000" />
+      <workItem from="1702702230361" duration="3162000" />
+      <workItem from="1702706244655" duration="26000" />
+    </task>
+    <task id="LOCAL-00001" summary="프로젝트 init">
+      <created>1700804290049</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700804290049</updated>
+    </task>
+    <task id="LOCAL-00002" summary="jpa 실습&#10;- EntityManagerFactory, EntityManager 사용&#10;- transaction 적용&#10;- CRUD 테스트&#10;- h2 디비 연결&#10;- jpql 사용">
+      <created>1701041416460</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701041416460</updated>
+    </task>
+    <task id="LOCAL-00003" summary="jpa 실습&#10;- 영속/준영속/비영속/삭제">
+      <created>1701217058954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701217058954</updated>
+    </task>
+    <task id="LOCAL-00004" summary="영속성 엔티티&#10;- 1차 캐시&#10;- 동일성 보장&#10;- 쓰기 지연&#10;- 변경 감지">
+      <created>1701219019368</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701219019368</updated>
+    </task>
+    <task id="LOCAL-00005" summary="영속성 엔티티&#10;- flush 테스트">
+      <created>1701234468089</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701234468089</updated>
+    </task>
+    <task id="LOCAL-00006" summary="영속성 컨텍스트&#10;- 준영속 상태">
+      <created>1701236045098</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701236045098</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ddl 자동생성">
+      <created>1701241895091</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701241895091</updated>
+    </task>
+    <task id="LOCAL-00008" summary="필드 / 컬럼 매핑">
+      <created>1702009678912</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702009678912</updated>
+    </task>
+    <task id="LOCAL-00009" summary="기본키 매핑">
+      <created>1702015526636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702015526636</updated>
+    </task>
+    <task id="LOCAL-00010" summary="원복">
+      <created>1702702266107</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702702266107</updated>
+    </task>
+    <task id="LOCAL-00011" summary="테이블 관계 매핑의 단점">
+      <created>1702705795888</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702705795888</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="프로젝트 init" />
+    <MESSAGE value="jpa 실습&#10;- EntityManagerFactory, EntityManager 사용&#10;- transaction 적용&#10;- CRUD 테스트&#10;- h2 디비 연결" />
+    <MESSAGE value="jpa 실습&#10;- EntityManagerFactory, EntityManager 사용&#10;- transaction 적용&#10;- CRUD 테스트&#10;- h2 디비 연결&#10;- jpql 사용" />
+    <MESSAGE value="jpa 실습&#10;- 영속/준영속/비영속/삭제" />
+    <MESSAGE value="영속성 엔티티&#10;- 1차 캐시&#10;- 동일성 보장&#10;- 쓰기 지연&#10;- 변경 감지" />
+    <MESSAGE value="영속성 엔티티&#10;- flush 테스트" />
+    <MESSAGE value="영속성 컨텍스트&#10;- 준영속 상태" />
+    <MESSAGE value="ddl 자동생성" />
+    <MESSAGE value="필드 / 컬럼 매핑" />
+    <MESSAGE value="기본키 매핑" />
+    <MESSAGE value="원복" />
+    <MESSAGE value="테이블 관계 매핑의 단점" />
+    <MESSAGE value="test push" />
+    <option name="LAST_COMMIT_MESSAGE" value="test push" />
+  </component>
+</project>
