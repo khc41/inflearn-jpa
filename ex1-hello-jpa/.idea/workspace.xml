@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d25c2fa-fd61-4788-8d06-e980d7ce47b1" name="변경" comment="test push" />
+    <list default="true" id="1d25c2fa-fd61-4788-8d06-e980d7ce47b1" name="변경" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/Team.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,10 +36,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="2Yblo8Dq6EPHdqoQlRcutY0hFpo" />
@@ -109,6 +118,7 @@
       <workItem from="1702702230361" duration="3162000" />
       <workItem from="1702706244655" duration="26000" />
       <workItem from="1702790282733" duration="84000" />
+      <workItem from="1702790401045" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 init">
       <created>1700804290049</created>
@@ -187,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702705795888</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test">
+      <created>1702790443581</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702790443581</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +238,7 @@
     <MESSAGE value="원복" />
     <MESSAGE value="테이블 관계 매핑의 단점" />
     <MESSAGE value="test push" />
-    <option name="LAST_COMMIT_MESSAGE" value="test push" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
