@@ -1,6 +1,7 @@
 package jpabook.jpashop;
 
-import org.springframework.boot.SpringApplication;
+import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.domain.OrderItem;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.persistence.EntityManager;
@@ -11,24 +12,27 @@ import javax.persistence.Persistence;
 @SpringBootApplication
 public class JpaMain {
 
-	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
+    public static void main(String[] args) {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
 
-		EntityManager em = emf.createEntityManager();
+        EntityManager em = emf.createEntityManager();
 
-		EntityTransaction tx = em.getTransaction();
+        EntityTransaction tx = em.getTransaction();
 
-		tx.begin();
+        tx.begin();
 
-		try {
+        try {
 
-			tx.commit();
-		} catch (Exception e) {
-			tx.rollback();
-		} finally {
-			em.close();
-		}
+            Order order = new Order();
+            order.addOrderItem(new OrderItem());
 
-		emf.close();
-	}
+            tx.commit();
+        } catch (Exception e) {
+            tx.rollback();
+        } finally {
+            em.close();
+        }
+
+        emf.close();
+    }
 }
