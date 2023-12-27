@@ -1,8 +1,13 @@
 package hellojpa;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
+@Getter
+@Setter
 public class Member {
 
     @Id
@@ -11,39 +16,5 @@ public class Member {
     private Long id;
     @Column(name = "USERNAME")
     private String usarname;
-//    @Column(name = "TEAM_ID")
-//    private Long teamId;
 
-    @ManyToOne
-    @JoinColumn(name = "TEAM_ID")
-    private Team team;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getUsarname() {
-        return usarname;
-    }
-
-    public void setUsarname(String usarname) {
-        this.usarname = usarname;
-    }
-
-    public Team getTeam() {
-        return team;
-    }
-
-//    public void changeTeam(Team team) {
-//        this.team = team;
-//        team.getMembers().add(this);
-//    }
-
-    public void setTeam(Team team) {
-        this.team = team;
-    }
 }
