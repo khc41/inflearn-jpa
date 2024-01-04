@@ -17,6 +17,10 @@ public class Member {
     @Column(name = "USERNAME")
     private String usarname;
 
+    @OneToOne
+    @JoinColumn(name = "LOCKER_ID")
+    private Locker locker;
+
     @ManyToOne
     @JoinColumn(name = "TEAM_ID", insertable = false, updatable = false)
     private Team team;
