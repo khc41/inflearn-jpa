@@ -22,10 +22,19 @@ public class JpaMain {
             team.setName("teamA");
             em.persist(team);
 
+            Team teamB = new Team();
+            team.setName("teamB");
+            em.persist(teamB);
+
             Member member1 = new Member();
             member1.setUsarname("member1");
             member1.setTeam(team);
             em.persist(member1);
+
+            Member member2 = new Member();
+            member2.setUsarname("member1");
+            member2.setTeam(teamB);
+            em.persist(member2);
 
             em.flush();
             em.clear();
