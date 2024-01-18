@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-public class Member extends BaseEntity {
+public class Member {
 
     @Id
     @GeneratedValue
@@ -17,8 +17,12 @@ public class Member extends BaseEntity {
     @Column(name = "USERNAME")
     private String usarname;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "TEAM_ID")
-    private Team team;
+    //기간 Period
+    @Embedded
+    private Period workPeriod;
+
+    //주소
+    @Embedded
+    private Address homeAddress;
 
 }
