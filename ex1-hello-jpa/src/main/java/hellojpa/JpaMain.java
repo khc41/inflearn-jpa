@@ -4,8 +4,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
-import java.util.Set;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -19,14 +21,13 @@ public class JpaMain {
 
         try {
 
-            List<Member> result = em.createQuery(
-                    "select m from Member m where m.usarname like '%kim%'",
-                    Member.class
-            ).getResultList();
+            CriteriaBuilder cb = em.getCriteriaBuilder();
+            CriteriaQuery<Member> query = cb.createQuery(Member.class);
 
-            for (Member member : result) {
-                System.out.println("member = " + member);
-            }
+            Root<Member> m = query.from(Member.class);
+
+            CriteriaQuery<Member> cq = query.select(m).where(cb.equal(m.get("username"), "kim"));
+            List<Member> members = em.createQuery(cq).getResultList();
 
             tx.commit();
         } catch (Exception e) {
