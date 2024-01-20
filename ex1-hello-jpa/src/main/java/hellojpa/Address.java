@@ -8,7 +8,6 @@ import lombok.Setter;
 import javax.persistence.Embeddable;
 
 @Getter
-@Setter
 @Embeddable
 @NoArgsConstructor
 @AllArgsConstructor
