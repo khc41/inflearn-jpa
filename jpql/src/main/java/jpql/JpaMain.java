@@ -6,6 +6,8 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import java.util.List;
 
+import static jpql.MemberType.ADMIN;
+
 public class JpaMain {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
@@ -25,6 +27,7 @@ public class JpaMain {
             Member member = new Member();
             member.setUsername("member1");
             member.setAge(10);
+            member.setType(ADMIN);
 
             member.setTeam(team);
 
@@ -33,13 +36,18 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-//            String query = "select m from Member m join m.team t";
-//            String query = "select m from Member m left join m.team t";
-//            String query = "select m from Member m, Team t where m.username = t.name";
-//            String query = "select m from Member m join m.team t on t.name = 'teamA'";
-            String query = "select m from Member m left join Team t on m.username = t.name";
-            List<Member> result = em.createQuery(query, Member.class)
+            String query = "select m.username, 'HELLO', TRUE from Member m " +
+                    "where m.type = :userType " +
+                    "and m.age between 0 and 10";
+            List<Object[]> result = em.createQuery(query)
+                    .setParameter("userType", ADMIN)
                     .getResultList();
+
+            for (Object[] objects : result) {
+                System.out.println("objects[0] = " + objects[0]);
+                System.out.println("objects[1] = " + objects[1]);
+                System.out.println("objects[2] = " + objects[2]);
+            }
 
 
             tx.commit();
