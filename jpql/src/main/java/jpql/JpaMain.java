@@ -6,8 +6,6 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import java.util.List;
 
-import static jpql.MemberType.ADMIN;
-
 public class JpaMain {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
@@ -20,32 +18,44 @@ public class JpaMain {
 
         try {
 
-            Team team = new Team();
-            team.setName("teamA");
-            em.persist(team);
+            Team teamA = new Team();
+            teamA.setName("팀A");
+            em.persist(teamA);
 
-            Member member = new Member();
-            member.setUsername("관리자");
-            member.setAge(10);
-            member.setType(ADMIN);
+            Team teamB = new Team();
+            teamB.setName("팀B");
+            em.persist(teamB);
 
-            member.setTeam(team);
+            Member member1 = new Member();
+            member1.setUsername("회원1");
+            member1.setTeam(teamA);
+            em.persist(member1);
 
-            em.persist(member);
+            Member member2 = new Member();
+            member2.setUsername("회원2");
+            member2.setTeam(teamA);
+            em.persist(member2);
+
+            Member member3 = new Member();
+            member3.setUsername("회원2");
+            member3.setTeam(teamB);
+            em.persist(member3);
 
             em.flush();
             em.clear();
 
-//            String query = "select concat('a', 'b') from Member m ";
-//            String query = "select substring(m.username, 2, 3) from Member m ";
-//            String query = "select locate('de', 'abcdefg') from Member m ";
-//            String query = "select size(t.members) From Team t";
-            String query = "select function('group_concat', m.username) From Member m";
-            List<String> result = em.createQuery(query, String.class)
+            String query = "select m From Member m";
+
+            List<Member> result = em.createQuery(query, Member.class)
                     .getResultList();
 
-            for (String s : result) {
-                System.out.println("s = " + s);
+            for (Member member : result) {
+                System.out.println("member = " + member.getUsername() + ", " + member.getTeam().getName());
+                // 회원1, 팀A(SQL)
+                // 회원2, 팀A(1차캐시)
+                // 회원3, 팀B(SQL)
+
+                // 회원 100명 -> N + 1
             }
 
             tx.commit();
