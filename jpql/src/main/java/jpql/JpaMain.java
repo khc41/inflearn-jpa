@@ -44,10 +44,10 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-            String query = "select m From Member m where m = :member";
+            String query = "select m From Member m where m.team = :team";
 
             Member result = em.createQuery(query, Member.class)
-                    .setParameter("member", member1)
+                    .setParameter("team", teamB)
                     .getSingleResult();
 
             System.out.println("result = " + result);
